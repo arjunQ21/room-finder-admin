@@ -48,7 +48,9 @@ foreach($properties as $propertyName => $details){
 // extra validations
 
 //image part
-if(!empty($_FILES['room_image'])){
+// print_r($_FILES) ;
+// die() ;
+if(!empty($_FILES['room_image']) && !$_FILES['room_image']['error']){
     if(explode('/', $_FILES['room_image']['type'])[0] != 'image'){
         $validationErrors[] = "Invalid File type. Only images are accepted." ;
     }else{

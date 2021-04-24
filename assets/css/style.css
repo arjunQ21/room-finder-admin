@@ -73,3 +73,33 @@ input[type="submit"] {
 .light-heading {
     color: #999;
 }
+
+div.has-rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div.room {
+    width: 90%;
+    max-width: 250px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+div.room:hover {
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+div.room div.r-img {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.room div.r-title {
+    padding: 10px;
+    font-weight: normal;
+}
