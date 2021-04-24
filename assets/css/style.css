@@ -1,0 +1,75 @@
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    /* height:100px ; */
+    background: #ff8f6b;
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 19px;
+}
+
+div#with-nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav {
+    width: 200px;
+    background-color: #B5B0D2;
+    height: 100%;
+    min-height: 100vh;
+}
+
+nav a {
+    padding: 15px;
+    display: inline-block;
+}
+
+div#content {
+    flex: 1;
+    min-height: 100vh;
+    padding: 10px;
+    background: #fdfdfd;
+}
+
+div.error p {
+    padding: 10px 15px;
+    margin: 10px;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+div.message p {
+    padding: 10px 15px;
+    margin: 10px;
+    background: rgba(0, 255, 0, 0.1);
+}
+
+table.inputTable tr {
+    display: block;
+    margin-bottom: 10px;
+}
+
+table.inputTable tr td:nth-child(1) {
+    padding-right: 15px;
+}
+
+table.inputTable tr td:nth-child(2) input {
+    padding: 5px;
+    min-width: 300px;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    background-color: cadetblue;
+    color: white;
+}
+
+.light-heading {
+    color: #999;
+}

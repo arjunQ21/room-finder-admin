@@ -1,0 +1,41 @@
+{
+    "properties": [{
+        "name": {
+            "name": "Room Name",
+            "type": "string",
+            "required": true
+        },
+        "description": {
+            "name": "Description",
+            "type": "string"
+        },
+        "address": {
+            "name": "Room's Address",
+            "type": "string"
+        },
+        "roomsCount": {
+            "name": "Number of rooms",
+            "type": "integer"
+        },
+        "bhk": {
+            "name": "Number of Bedroom, Hall and Kitchen",
+            "type": "integer"
+        },
+        "ownerName": {
+            "name": "Room owner's name",
+            "type": "string"
+        },
+        "ownerContact": {
+            "name": "Room owner's phone number",
+            "type": "integer"
+        },
+        "ownerAddress": {
+            "name": "Room owner's address",
+            "type": "string"
+        },
+        "image": {
+            "name": "Room's image",
+            "type": "image"
+        }
+    }]
+}
