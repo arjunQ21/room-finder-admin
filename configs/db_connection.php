@@ -1,19 +1,15 @@
-<!-- <pre> -->
-<?php 
+<?php
 
-$hostName = "localhost" ;
-$db_user = "root" ;
-$db_pass = "" ;
-$db_name = "roomFinder" ;
+$hostName = "localhost";
+$db_user = "root";
+$db_pass = "";
+$db_name = "roomFinder";
 
-$connection = mysqli_connect($hostName,$db_user, $db_pass, $db_name ) ;
+$connection = mysqli_connect($hostName, $db_user, $db_pass, $db_name);
 
 // var_dump($connection) ;
 
-if(!$connection){
-	//unable to connect due to some error
-	die("Unable to connect to db.") ;
+if (!$connection) {
+    //unable to connect due to some error
+    die("Unable to connect to db.");
 }
-
-
-?>
