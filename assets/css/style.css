@@ -27,8 +27,14 @@ nav {
 }
 
 nav a {
+    transition: .6s;
     padding: 15px;
-    display: inline-block;
+    display: block;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+
 }
 
 div#content {

@@ -11,7 +11,7 @@ try {
     $URIs = explode("/", $URI);
     $appHostedURI = "http://" . $hostname . implode("/", array_slice($URIs, 0, count($URIs) - 2)) . "/";
 
-    $defaultImage = 'assets/images/rooms/room-default.jpg';
+    $defaultImage = 'assets/images/rooms/room-default.png';
     $withRightImageURLs = array_map(function (&$room) {
         global $appHostedURI, $defaultImage;
         $image = $appHostedURI . (($room['image']) ? $room['image'] : $defaultImage);

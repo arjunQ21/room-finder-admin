@@ -64,9 +64,13 @@ $properties = require_once "../configs/room_properties.php" ;
 </table>
 </form>
 
+<hr>
+<form action="/controllers/deleteRoom.php" method = 'POST'>
+    <input type="hidden" value = "<?= $room['id']?>" name = 'room_id' >
+    <input type="submit" value = 'Delete Room' style='background-color: rgba(255, 0,0,0.7);' onclick="(parseInt(prompt('You cant undo this. \nEnter room id to continue:')) == <?= $room['id']?>) || event.preventDefault()">
+</form>
+
 <?php } else echo "<h2> room not found</h2>" ;?>
-
-
 
 <?php require_once "parts/footer.php"; ?>
 

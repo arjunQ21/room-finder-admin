@@ -13,11 +13,11 @@ $arr = mysqli_fetch_all($result,MYSQLI_ASSOC);
 <h2 class='light-heading'>Welcome to RoomFinder Admin. </h2>
 
 
-<h3 class='light-heading'>All Rooms:</h3>
+<h3 class='light-heading'>Choose a Room to update details</h3>
 
 <div class="has-rooms">
     <?php foreach($arr as $room){
-        $image = empty($room['image']) ? "assets/images/rooms/room-default.jpg" : $room['image'] ;
+        $image = empty($room['image']) ? "assets/images/rooms/room-default.png" : $room['image'] ;
     ?>
 
 <div class="room" onclick = "window.location.assign('editRoom.php?id=<?= $room['id']?>');">

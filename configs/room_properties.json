@@ -9,6 +9,11 @@
             "name": "Description",
             "type": "string"
         },
+        "price": {
+            "name": "Price(Rs)",
+            "type": "string",
+            "required": true
+        },
         "address": {
             "name": "Room's Address",
             "type": "string"

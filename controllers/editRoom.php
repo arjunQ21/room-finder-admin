@@ -56,6 +56,8 @@ if(!empty($_FILES['room_image']) && !$_FILES['room_image']['error']){
     }else{
         $fileName = "assets/images/rooms/$roomId-".getdate()[0].".".pathinfo($_FILES['room_image']['name'], PATHINFO_EXTENSION) ;
     
+// print_r($_SERVER) ;
+
         // saving image in folder
         move_uploaded_file($_FILES['room_image']['tmp_name'], __DIR__. "/../$fileName") ;
         $sql .= "image = '$fileName', " ;
