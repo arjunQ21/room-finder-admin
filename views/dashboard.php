@@ -1,7 +1,9 @@
 <?php
-$pageTitle = "Room Finder Admin | Dashboard" ;
+session_start() ;
 require_once "parts/header.php" ;
 require_once "../configs/loader.php" ;
+if(!isLoggedIn()) {quickFlashError("Login Needed.") ; header("Location: ../");} 
+$pageTitle = "Room Finder Admin | Dashboard" ;
 
 //showing all rooms in system
 $sql="SELECT * from rooms order by id desc";

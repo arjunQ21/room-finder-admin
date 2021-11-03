@@ -79,7 +79,7 @@ if(sizeof($validationErrors) > 0){
     if(mysqli_affected_rows($connection) == 1){
         quickFlashMessage("Record updated successfully.") ;
     }else{
-        quickFlashError("Record not updated."  ) ;
+        quickFlashError("Record not updated. " . mysqli_error($connection)  ) ;
     }
 }
 header("Location: ../views/editRoom.php?id=$roomId");

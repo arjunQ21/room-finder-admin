@@ -1,5 +1,6 @@
 <?php
 require_once "../configs/loader.php" ;
+if(!isLoggedIn()) {quickFlashError("Login Needed.") ; header("Location: ../");} 
 $pageTitle = "Edit Room | Room Finder Admin" ;
 try{
     $roomId = (int) $_GET['id'] ;

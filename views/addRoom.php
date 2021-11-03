@@ -1,4 +1,7 @@
 <?php
+session_start() ;
+require_once "../configs/loader.php" ;
+if(!isLoggedIn()) {quickFlashError("Login Needed.") ; header("Location: ../");} 
 $pageTitle = "Room Finder Admin | Dashboard" ;
 require_once "parts/header.php" ;
 ?>

@@ -22,6 +22,6 @@ if($result){
     quickFlashMessage("New Room Added.") ;
     header("Location: ../views/editRoom.php?id=".$newId) ;
 }else{
-    quickFlassError("Some Errors Occurred.") ;
+    quickFlashError("Some Errors Occurred. " . mysqli_error($connection)) ;
     header("Location: ../views/addRoom.php") ;
 }
